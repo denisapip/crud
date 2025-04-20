@@ -1,26 +1,26 @@
-﻿# Host: localhost  (Version 5.5.5-10.4.32-MariaDB)
+# Host: localhost  (Version 5.5.5-10.4.32-MariaDB)
 # Date: 2024-11-05 04:23:03
 # Generator: MySQL-Front 6.1  (Build 1.26)
 
 
 #
-# Structure for table "siswa"
+# Structure for table "flower"
 #
 
-DROP TABLE IF EXISTS `siswa`;
-CREATE TABLE `siswa` (
-  `nis` double NOT NULL,
+DROP TABLE IF EXISTS `flower`;
+CREATE TABLE `flower` (
+  `stock` double NOT NULL,
   `nama` varchar(255) DEFAULT NULL,
-  `jk` varchar(255) DEFAULT NULL,
-  `kelas` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`nis`)
+  `ukuran` varchar(255) DEFAULT NULL,
+  `harga` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`stock`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 #
-# Data for table "siswa"
+# Data for table "flower"
 #
 
-INSERT INTO `siswa` VALUES (1001,'Nugroho','L','11 TJKT 1'),(1002,'Budi','L','11 TJKT 1'),(1003,'Caca','P','11 TJKT 2'),(1004,'Dika','L','11 TJKT 2'),(1005,'Edo','L','11 TJKT 3');
+INSERT INTO `flower` VALUES (40,'Daisy','Sedang','Rp.60.000'),(50,'Aster','Sedang','Rp.40.000'),(35,'Mawar','Besar','Rp.80.000'),(25,'Tulip','Besar','Rp.95.000'),(45,'Peony','Besar','Rp.70.000');
 
 #
 # Structure for table "user"
